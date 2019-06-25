@@ -1,0 +1,68 @@
+<h1>Inter new Item</h1>
+<form action="" (ngSubmit)="onSubmit(form)"  #form='ngForm' >
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-4">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" id='name' ngModel name='name' type="text" maxlength="40" [required] >
+    </div>
+</div>
+<div class="col-12 col-sm-4">
+    <div class="form-group">
+      <label for="Buy-price">Buy price</label>
+      <input class="form-control" id='Buy-price' ngModel name='Buy_price' type="number"  [required]>
+    </div>
+  </div>
+  <div class="col-12 col-sm-4">
+    <div class="form-group">
+      <label for="Sell-price">Sell price</label>
+      <input class="form-control" id='Sell-price' ngModel name='Sell_price' type="number"  [required] >
+    </div>
+  </div>
+  </div>
+  <div class="row">
+      <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label for="sell-date">Sell date</label>
+        <input class="form-control" id='sell-date' ngModel name='sell_date' type="date"  [required]>
+      </div>
+  </div>
+  <div class="col-12 col-sm-4">
+      <div class="form-group">
+        <label for="buy-date">Buy date</label>
+        <input class="form-control" id='buy-date' ngModel name='buy_date'  type="date"  [required]>
+      </div>
+    </div>
+    <!-- <div class="custom-file">
+            <input type="file" class="custom-file-input input-group-prepend" id="customFile" ngModel name='images'>
+            <label class="custom-file-label" for="customFile" >Choose file</label>
+          </div> -->
+    </div>
+  <div class="row">
+    <div class="col-12 col-sm">
+      <div class="form-group">
+      <label for="description">Description</label>
+      <textarea name="description" id="description" ngModel cols="30" rows="5" class='form-control'></textarea>
+    </div></div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm">
+      <div class="form-group">
+          <div class="custom-file">
+              <input type="file" class="custom-file-input input-group-prepend" id="customFile" ngModel name='images'>
+              <label class="custom-file-label" for="customFile" >Choose file</label>
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()" >Submit</button>
+</div>
+
+
+<!-- <button type="submit" class="btn btn-primary" (click)="onSubmit()" [disabled]='!formValue.invalid ' >Submit</button> -->
+
+</form>
