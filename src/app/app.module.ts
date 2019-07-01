@@ -9,18 +9,24 @@ import {ToastModule} from 'primeng/toast';
 import { NewItemComponent } from './new-item/new-item.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ItemCardComponent } from './item-card/item-card.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import {MatButtonModule,MatMenuModule,MatIconModule,MatIconRegistry} from '@angular/material';
+import { StoreComponent } from './store/store.component';
 @NgModule({
   declarations: [
     AppComponent,
     NewItemComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    HomePageComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AccordionModule,BrowserAnimationsModule,ToastModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,MatMenuModule,MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

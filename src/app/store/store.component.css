@@ -1,0 +1,10 @@
+.cardList{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin: auto auto;
+  margin-top: 2em;
+
+
+}
