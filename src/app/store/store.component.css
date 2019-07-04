@@ -2,9 +2,31 @@
   display: flex;
   flex-direction: row;
   flex-flow: row;
-  justify-content: flex-start;
+
+  align-items: flex-start;
   margin: auto auto;
-  margin-top: 2em;
+  margin-top: 4em;
 
 
+}
+/* .single-card{
+  height: 100px;
+  width: 25px;
+} */
+.right_menu {
+  position: fixed;
+  flex-direction: column;
+}
+ .example-container {
+ height: 100%;
+ width: 100%;
+ padding: 2px;
+  border: 1px solid #555;
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-star;
 }

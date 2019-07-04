@@ -10,7 +10,9 @@ import { NewItemComponent } from './new-item/new-item.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import {MatButtonModule,MatMenuModule,MatIconModule,MatIconRegistry} from '@angular/material';
+import {MatButtonModule,MatMenuModule,MatIconModule,MatSidenavModule,MatButton,MatFormFieldModule,MatOptionModule,MatSelectModule,MatSelectionList,
+MatListModule
+} from '@angular/material';
 import { StoreComponent } from './store/store.component';
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { StoreComponent } from './store/store.component';
     AccordionModule,BrowserAnimationsModule,ToastModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,MatMenuModule,MatIconModule,
+    MatButtonModule,MatMenuModule,MatIconModule,MatSidenavModule,MatFormFieldModule,MatOptionModule,MatSelectModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
