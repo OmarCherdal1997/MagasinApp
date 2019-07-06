@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header>
-    <mat-menu #appMenu="matMenu">
+    <mat-menu #appMenu="matMenu" xPosition='before'>
       <button mat-menu-item routerLink='/'>
         <mat-icon>home</mat-icon>
         <span>Home</span>
@@ -16,7 +16,7 @@
     </mat-menu>
 
     <button mat-icon-button [matMenuTriggerFor]="appMenu">
-      <mat-icon>more_vert</mat-icon>
+      <mat-icon>list</mat-icon>
     </button>
     </header>
 <router-outlet></router-outlet>

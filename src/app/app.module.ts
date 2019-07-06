@@ -14,13 +14,15 @@ import {MatButtonModule,MatMenuModule,MatIconModule,MatSidenavModule,MatButton,M
 MatListModule
 } from '@angular/material';
 import { StoreComponent } from './store/store.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
     NewItemComponent,
     ItemCardComponent,
     HomePageComponent,
-    StoreComponent
+    StoreComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
