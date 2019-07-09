@@ -1,6 +1,34 @@
-
-    <nz-carousel nzAutoPlay>
-        <div >
-          <img  nz-carousel-content *ngFor="let index of array"  [src]='images[index]'>
+  <div class="container">
+    <nz-carousel nzAutoPlay="true">
+        <div nz-carousel-content *ngFor="let index of array">
+          <img [src]='images[index]'>
         </div>
       </nz-carousel>
+    </div>
+    <br>
+    <div class="container" >
+    <div  nz-row nzType="flex" nzJustify="space-around" nzAlign="bottom" class='second'>
+      <div nz-col nzSpan="10" class='text1'>
+        <h2>Holla</h2>
+        <br>
+        <p>We are very excited to introduce the Man Overboard kit: essentials for life on the go. Our goal was to create a beautiful set of leather goods that will be functional, simple and last a lifetime. We are making the whole kit available at a great price for purchase, along with each piece sold separately.</p>
+      </div>
+      <div nz-col nzSpan="10">
+        <img src='https://image.shutterstock.com/image-photo/beautiful-texture-decorative-venetian-stucco-260nw-1193660509.jpg'>
+      </div>
+    </div>
+  </div>
+  <div class="container" >
+    <div  nz-row nzType="flex" nzJustify="space-around" nzAlign="bottom" class='second'>
+
+      <div nz-col nzSpan="10" class='img2'>
+        <img src='https://st.depositphotos.com/1000123/2719/i/450/depositphotos_27191477-stock-photo-abstract-backgrounds-with-water-bubbles.jpg'>
+      </div>
+      <div nz-col nzSpan="10" class='text2'>
+        <h2>Holla</h2>
+        <br>
+        <p>We are very excited to introduce the Man Overboard kit: essentials for life on the go. Our goal was to create a beautiful set of leather goods that will be functional, simple and last a lifetime. We are making the whole kit available at a great price for purchase, along with each piece sold separately.</p>
+      </div>
+    </div>
+
+  </div>

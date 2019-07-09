@@ -4,6 +4,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nz-input-group{
+  width: 50px;
+}
 
 .app-layout {
   height: 100vh;

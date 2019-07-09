@@ -1,6 +1,6 @@
 [nz-carousel-content] {
   text-align: center;
-  height: 200px;
+  height: 100px;
   width: 100%;
   line-height: 160px;
   background: #364d79;
@@ -11,4 +11,21 @@
 
 h3 {
   color: #fff;
+}
+.second{
+  margin-left: 55px;
+    margin-right: 201px;
+    margin-top: 82px;
+}
+.text1{
+  display: block;
+  position: relative;
+}
+.img2{
+  height: 400px;
+  width: 400px;
+  margin-left: -78px;
+}
+.text2{
+  margin-right: -111px;
 }
