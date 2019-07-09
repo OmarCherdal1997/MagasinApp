@@ -1,4 +1,4 @@
-<div class="itemCrd">
+<!-- <div class="itemCrd">
 <div class="card">
     <img [src]='item.images' class="card-img-top" alt="2">
     <div class="card-body">
@@ -9,17 +9,22 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
 </div>
-</div>
-<!-- <div class="badge">
-    <div class="card">
-        <img [src]='test_item.images' class="card-img-top" alt="2">
-        <div class="card-body">
-          <h5 class="card-title">{{test_item.name}}</h5>
-          <p class="card-text">
-            {{test_item.buy_date}}
-          </p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
-    </div>
- -->
+</div> -->
+<nz-card  [nzCover]="coverTemplate" [nzExtra]="stock" >
+  <nz-card-meta
+    [nzTitle]='item.name'
+    [nzDescription]='price'
+  ></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
+  <img alt="example" [src]='item.images' />
+</ng-template>
+<ng-template #stock>
+  <nz-badge [nzCount]="5">
+    <a class="head-example"></a>
+  </nz-badge>
+</ng-template>
+<ng-template #price class="price">
+  <span>{{item.sell_price}}</span>
+  <strong>DH</strong>
+</ng-template>

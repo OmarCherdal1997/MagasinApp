@@ -6,8 +6,12 @@
   align-items: flex-start;
   margin: auto auto;
   margin-top: 4em;
+  height: 400px;
 
 
+}
+app-item-card{
+height: 400px;
 }
 /* .single-card{
   height: 100px;

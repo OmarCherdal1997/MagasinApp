@@ -4,7 +4,7 @@
   <app-item-card *ngFor="let item of ItemList" [item]='item'></app-item-card>
 </div> -->
 
-<mat-drawer-container #drawer class="example-container" [hasBackdrop]="hasBackdrop.value">
+<!-- <mat-drawer-container #drawer class="example-container" [hasBackdrop]="hasBackdrop.value">
   <!-- <mat-drawer #drawer [mode]="mode.value">I'm a drawer
     <mat-selection-list #shoes>
       <mat-list-option *ngFor="let item of ItemList">
@@ -12,7 +12,7 @@
       </mat-list-option>
     </mat-selection-list>
   </mat-drawer> -->
-  <mat-drawer-content >
+ <!--  <mat-drawer-content >
     <div class='right_menu'>
     <mat-form-field >
       <mat-label>Sidenav mode</mat-label>
@@ -39,4 +39,8 @@
 
 
   </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container> -->
+<div class="cardList" >
+  <app-item-card *ngFor="let item of ItemList" [item]='item' class="single-card" (click)='selectItem(item)'></app-item-card>
+</div>
+

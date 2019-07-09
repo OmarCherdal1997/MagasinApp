@@ -1,22 +1,57 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<header>
-    <mat-menu #appMenu="matMenu" xPosition='before'>
-      <button mat-menu-item routerLink='/'>
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
-      </button>
-      <button mat-menu-item routerLink='/store'>
-        <mat-icon>local_grocery_store</mat-icon>
-        <span>Store</span>
-      </button>
-      <button mat-menu-item routerLink='/new-item'>
-          <mat-icon>create</mat-icon>
-          <span>Add new item</span>
-        </button>
-    </mat-menu>
-
-    <button mat-icon-button [matMenuTriggerFor]="appMenu">
-      <mat-icon>list</mat-icon>
-    </button>
-    </header>
-<router-outlet></router-outlet>
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [(nzCollapsed)]="isCollapsed"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="https://ng.ant.design/" target="_blank">
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        <h1>Ant Design Of Angular</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/welcome">
+              <i nz-icon [nzType]="'home'"></i>Home</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink='/store'>
+              <i nz-icon [nzType]="'appstore'"></i>Store</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink='/new-item'>
+              <i nz-icon [nzType]="'plus'"></i>Add Item</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a>Basic Form</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+            <i class="trigger"
+               nz-icon
+               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+            ></i>
+        </span>
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

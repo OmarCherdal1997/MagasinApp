@@ -15,6 +15,13 @@ MatListModule
 } from '@angular/material';
 import { StoreComponent } from './store/store.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { IconsProviderModule } from './icons-provider.module';
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
+import { HttpClientModule } from '@angular/common/http';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import {WelcomeComponent} from './pages/welcome/welcome.component'
+registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +29,8 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     ItemCardComponent,
     HomePageComponent,
     StoreComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +38,11 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     AccordionModule,BrowserAnimationsModule,ToastModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,MatMenuModule,MatIconModule,MatSidenavModule,MatFormFieldModule,MatOptionModule,MatSelectModule,MatListModule
+    MatButtonModule,MatMenuModule,MatIconModule,MatSidenavModule,MatFormFieldModule,MatOptionModule,MatSelectModule,MatListModule, IconsProviderModule,
+    NgZorroAntdModule, HttpClientModule
+
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

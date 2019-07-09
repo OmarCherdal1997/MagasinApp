@@ -1,5 +1,5 @@
 
-.itemCrd {
+/* .itemCrd {
   margin: auto auto;
   height: 10em;
   width: 200px;
@@ -17,4 +17,31 @@
   animation-name: focus;
   font-weight: bold;
 }
+ */
+ nz-card{
+   height: 250px;
+   width: 200px;
+   padding: 2px;
+   margin: 2px 2px;
+ }
+ img {
+   position: inherit;
+   margin-top: -42px;
+   width: 100%;
+   height: 70%;
+ }
 
+nz-badge{
+  display: flex;
+  margin-top: -22px;
+}
+span{
+  font-display: inherit;
+  font-size: 3;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: oblique;
+  color: black;
+
+
+}

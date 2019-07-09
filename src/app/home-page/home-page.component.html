@@ -1,2 +1,6 @@
 
-<h1>Hola  bb</h1>
+    <nz-carousel nzAutoPlay>
+        <div >
+          <img  nz-carousel-content *ngFor="let index of array"  [src]='images[index]'>
+        </div>
+      </nz-carousel>
