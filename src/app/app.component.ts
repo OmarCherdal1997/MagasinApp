@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isCollapsed = false;
+  isCollapsed = true;
+  isCollapse = false;
+
+  collapseSearch(myCollapsible){
+    myCollapsible.collapse({
+      toggle: false
+    })
+  }
+
 }

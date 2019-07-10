@@ -47,20 +47,70 @@
             ></i>
 
         </span>
-        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-          <input type="text" nz-input placeholder="input search text" />
-        </nz-input-group>
-        <ng-template #suffixIconButton>
-          <button nz-button nzType="primary" nzSearch><i nz-icon nzType="search"></i></button>
-        </ng-template>
+        <div class='search'>
+            <nz-input-group [nzSuffix]="suffixIconSearch" [nzCompact]=true [nzSize]='large' #myCollapsible>
+                <input type="text" nz-input placeholder="input search text" />
+              </nz-input-group>
+              <ng-template #suffixIconSearch>
+                <span  >
+                <i  nz-icon nzType="search"   ></i>
+              </span>
+              </ng-template>
 
+      </div>
       </div>
 
     </nz-header>
     <nz-content>
       <div class="inner-content">
         <router-outlet></router-outlet>
-      </div>
+
+             </div>
+
+      <footer class="inner-content">
+        <hr>
+             <div class='links'>
+                <div nz-row>
+                  <div nz-col nzspan="10" >
+                    <h5>Quick links</h5>
+                  </div>
+                </div>
+                <div nz-row nzType="" nzJustify="space-around"  nzAlign="middle">
+                    <div nz-col nzspan="2" >
+                          <a href='###'>
+                              <i nz-icon nzType="search" nzTheme="outline"></i>
+                              Search</a>
+                      </div>
+                    <div nz-col nzspan="2" nzoffset="2">
+                          <a href='###'>
+                              <i nz-icon nzType="phone" nzTheme="outline"></i>
+                              Contact us</a>
+                    </div>
+                    <div nz-col nzspan="2" nzoffset="2" >
+                          <a href='###'>
+                              <i nz-icon nzType="read" nzTheme="outline"></i>Refund policy</a>
+                  </div>
+                </div>
+              </div>
+                <hr>
+                <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                  <div nz-col nzSpan="10" class='height-50' nzOffset="1">
+                      <i nz-icon nzType="facebook" nzTheme="fill"></i>
+                      <i nz-icon nzType="twitter-circle" nzTheme="fill"></i>
+                      <i nz-icon nzType="youtube" nzTheme="fill"></i>
+                  </div>
+
+                </div>
+                <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                  <div nzSpan="10" class='height-50' nzOffset="1">
+                  <p>Powered by Omar</p>
+                </div>
+                </div>
+              </footer>
+
     </nz-content>
+
+
   </nz-layout>
+
 </nz-layout>

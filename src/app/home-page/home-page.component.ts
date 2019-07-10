@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatMenuTrigger} from '@angular/material';
 import { trigger } from '@angular/animations';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 
 @Component({
   selector: 'app-home-page',
@@ -20,6 +21,12 @@ export class HomePageComponent implements OnInit {
     'https://www.axiomsl.com/wp-content/uploads/2018/05/img-Solutions-NEW.jpg',
     'https://www.trndlabs.com/wp-content/uploads/2016/06/trndlabs-site-banner-template-1600-600-decembers-shipping-4.jpg',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcgnTQay0vEYlb7ij6U8ETYUnZNrneqBna0l7X6Fa3onsKcdj'
+  ]
+  images2=[
+
+    'https://i.stack.imgur.com/hOIuY.jpg',
+    'https://i.stack.imgur.com/zMoo4.jpg'
+
   ]
   constructor() { }
 
